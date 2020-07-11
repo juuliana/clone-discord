@@ -19,13 +19,24 @@ export const Container = styled.div`
 `;
 
 export const Avatar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  flex-shrink: 0;
   width: 40px;
   height: 40px;
 
-  background-color: var(--secondary);
   border-radius: 50%;
-  &.bot {
+  background-color: var(--white);
+
+  &.bot{
     background-color: var(--mention-detail);
+  }
+
+  > img {
+    width: 16px;
+    height: 16px;
   }
 `;
 
