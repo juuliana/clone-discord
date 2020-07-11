@@ -13,11 +13,11 @@ const ChannelInfo: React.FC = () => {
         <Container>
             <HashtagIcon/>
 
-            <Title>chat-livre</Title>
+            <Title>PedraFilosofal</Title>
 
             <Separator/>
 
-            <Description>Canal aberto para conversas</Description>
+            <Description>Canal aberto para conversas *Magia não é permitida*</Description>
         </Container>
     );
 };
