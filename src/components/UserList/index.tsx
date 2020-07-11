@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Container, Role, User, Avatar } from './styles';
 
+import avatar from '../../assets/avatar.svg';
+
 interface UserProps{
     nickname: string;
     isBot?: boolean;
@@ -10,7 +12,9 @@ interface UserProps{
 const UserRow: React.FC<UserProps> = ({nickname, isBot}) =>{
     return(
         <User>
-            <Avatar className={isBot ? 'bot' : ''}/>
+            <Avatar className={isBot ? 'bot' : ''}>
+                <img src={avatar} alt="avatar"/>
+            </Avatar>
 
             <strong>{nickname}</strong>
 
@@ -22,22 +26,22 @@ const UserRow: React.FC<UserProps> = ({nickname, isBot}) =>{
 const UserList: React.FC = () => {
     return (
         <Container>
-            <Role>Disponível - 1</Role>
-            <UserRow nickname = "Harry Potter"/>
-
-            <Role>Offline - 19</Role>
+            <Role>Disponível - 5</Role>
             <UserRow nickname = "Hermione Granger" isBot/>
             <UserRow nickname = "Ronald Weasley"/>
             <UserRow nickname = "Draco Malfoy"/>
+            <UserRow nickname = "Albus Dumbledore"/>
+            <UserRow nickname = "Dobby"/>
+
+            <Role>Offline - 8</Role>
+            
             <UserRow nickname = "Severus Snape"/>
             <UserRow nickname = "Lord Voldemort"/>
             <UserRow nickname = "Luna Lovegood"/>
             <UserRow nickname = "Minerva McGonagall"/>
             <UserRow nickname = "Sirius Black"/>
-            <UserRow nickname = "Albus Dumbledore"/>
             <UserRow nickname = "Rúbeo Hagrid"/>
             <UserRow nickname = "Bellatrix Lestrange"/>
-            <UserRow nickname = "Dobby"/>
             <UserRow nickname = "Neville Longbottom"/>
         </Container>
     );

@@ -25,6 +25,7 @@ export const Container = styled.div`
     background-color: var(--secondary);
   }
 `;
+
 export const Role = styled.span`
   margin-top: 20px;
 
@@ -33,6 +34,7 @@ export const Role = styled.span`
   font-weight: 500;
   color: var(--gray);
 `;
+
 export const User = styled.div`
   margin-top: 5px;
   padding: 5px;
@@ -69,15 +71,25 @@ export const User = styled.div`
     font-size: 11px;
   }
 `;
+
 export const Avatar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   flex-shrink: 0;
   width: 32px;
   height: 32px;
 
   border-radius: 50%;
-  background-color: var(--primary);
+  background-color: var(--white);
 
   &.bot{
     background-color: var(--mention-detail);
+  }
+
+  > img {
+    width: 16px;
+    height: 16px;
   }
 `;
