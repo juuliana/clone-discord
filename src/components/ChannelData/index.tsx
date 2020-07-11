@@ -17,13 +17,6 @@ const ChannelData: React.FC = () => {
     return (
         <Container>
             <Messages ref={messagesRef}>
-                {Array.from(Array(15).keys()).map((n) => (  
-                    <ChannelMessage
-                        author="Harry Potter"
-                        date="19/07/2020"
-                        content="Hoje é meu aniversário!"
-                    />
-                ))}
                 <ChannelMessage
                     author="Hermione Granger"
                     date="19/07/2020"
@@ -36,59 +29,44 @@ const ChannelData: React.FC = () => {
                     isBot
                 />
                 <ChannelMessage
-                    author="Harry Potter"
+                    author="Ronald Weasley"
                     date="19/07/2020"
-                    content="Hoje é meu aniversário!"
+                    content={
+                        <>
+                            E aí bruxinho <Mention>@Harry Potter</Mention>. Mais um ano se passou, parabéns!
+                        </>
+                    }
+                    hasMention
                 />
                 <ChannelMessage
-                    author="Harry Potter"
+                    author="Dobby"
                     date="19/07/2020"
-                    content="Hoje é meu aniversário!"
+                    content={
+                        <>
+                            <Mention>@Harry Potter</Mention>, comprei meias de presente pra você!
+                        </>
+                    }
+                    hasMention
                 />
                 <ChannelMessage
-                    author="Harry Potter"
+                    author="Albus Dumbledore"
                     date="19/07/2020"
-                    content="Hoje é meu aniversário!"
+                    content={
+                        <>
+                            <Mention>@Harry Potter</Mention>, nesse dia só desejo a você muita magia e felicidades!!
+                        </>
+                    }
+                    hasMention
                 />
                 <ChannelMessage
-                    author="Harry Potter"
+                    author="Draco Malfoy"
                     date="19/07/2020"
-                    content="Hoje é meu aniversário!"
-                />
-                <ChannelMessage
-                    author="Harry Potter"
-                    date="19/07/2020"
-                    content="Hoje é meu aniversário!"
-                />
-                <ChannelMessage
-                    author="Harry Potter"
-                    date="19/07/2020"
-                    content="Hoje é meu aniversário!"
-                />
-                <ChannelMessage
-                    author="Harry Potter"
-                    date="19/07/2020"
-                    content="Hoje é meu aniversário!"
-                />
-                <ChannelMessage
-                    author="Harry Potter"
-                    date="19/07/2020"
-                    content="Hoje é meu aniversário!"
-                />
-                <ChannelMessage
-                    author="Harry Potter"
-                    date="19/07/2020"
-                    content="Hoje é meu aniversário!"
-                />
-                <ChannelMessage
-                    author="Harry Potter"
-                    date="19/07/2020"
-                    content="Hoje é meu aniversário!"
-                />
-                <ChannelMessage
-                    author="Harry Potter"
-                    date="19/07/2020"
-                    content="Hoje é meu aniversário!"
+                    content={
+                        <>
+                            Está quase mais velho que o Dumbledore em <Mention>@Harry Potter</Mention>, brinks mas espero que você chegue lá.
+                        </>
+                    }
+                    hasMention
                 />
             </Messages>
 
