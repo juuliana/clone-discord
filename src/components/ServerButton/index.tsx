@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import Logo from '../../assets/Logo.svg';
+import Logo from '../../assets/castle.svg';
 
 import { Button } from './styles';
 
@@ -25,7 +25,7 @@ const ServerButton: React.FC<Props> = ({
       mentions={mentions}
       className={selected ? 'active' : ''}
     >
-      {isHome && <img src={Logo} alt="Rocketseat" />}
+      {isHome && <img src={Logo} alt="Hogwarts" />}
     </Button>
   );
 };
