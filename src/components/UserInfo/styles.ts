@@ -19,11 +19,20 @@ export const Profile = styled.div`
 `;
 
 export const Avatar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 32px;
   height: 32px;
   border-radius: 50%;
 
-  background-color: var(--gray);
+  background-color: var(--rocketseat);
+
+  > img {
+    width: 16px;
+    height: 16px;
+  }
 `;
 
 export const UserData = styled.div`
