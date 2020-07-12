@@ -1,6 +1,6 @@
 <h1 align="center">
   
-  ![Discord]()
+  ![Discord](https://github.com/juuliana/clone-discord/blob/master/src/assets/discord.PNG)
   
 <br>
   Clone - Discord personalizado: Harry Potter
@@ -19,10 +19,6 @@ Foi utilizado as seguintes ferramentas:
 Este projeto do clone-discord foi criado com ajuda do Guilherme Rodz da Rocketseat.
 
 Fiz a minha personalização com o exemplo de uma conversa no Discord utilizando o cenário e personagens do Universo Harry Potter!
-
-### Vídeo da aplicação
-![video]()
-<br>
 
 ### Para clonar o meu projeto:
   ```git clone "https://github.com/juuliana/clone-discord.git"```
