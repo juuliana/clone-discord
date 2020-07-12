@@ -30,9 +30,10 @@ Fiz a minha personalização com o exemplo de uma conversa no Discord utilizando
 ### Para instalar as depêndencias necessárias:
   ```npm install```
   
-### Para fazer o seu com ajuda do Guilherme Rodz
-<a href="https://www.youtube.com/watch?v=x4FdZd2-_uU">
+<h3 align="center">
+<br>
+  Para fazer o seu com ajuda do Guilherme Rodz
+  <a href="https://www.youtube.com/watch?v=x4FdZd2-_uU">
     <p align="center">Clique aqui para acessar</p>
-</a>
-
-##### Obrigada por acessar, não esqueça daquela Star pra me ajudar! 
+  </a>
+</h3>
